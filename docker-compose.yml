@@ -1,0 +1,10 @@
+version: '3'
+services:
+    telegram-forward-user-bot
+        image: petrovoronov/telegram-forward-user-bot
+        volumes:
+            - ./data:/app/data
+        environment:
+            - TELEGRAM_USER_API_ID=26688103
+            - TELEGRAM_USER_API_HASH=a35627127292f2c0099877d88259731c
+            - TELEGRAM_BOT_AUTH_TOKEN=7459307849:AAGE18Ix5-AzIPmN_4A3n8AH-MXNdVZIPKw
